@@ -2,20 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Blog from './blog'
 
-function BulletPoint(props) {
-  return (
-    <p className="flex items-start mt-8 mb-4 space-x-2">
-     <svg className="w-6 h-6 flex-none mt-0.5" fill="none">
-      <circle cx="12" cy="12" r="12" fill="#A7F3D0" />
-      <path d="M18 8l-8 8-4-4" stroke="#047857" stroke-width="2"></path>
-     </svg>
-     <span className="flex-1 text-base leading-7">
-      {props.content}
-     </span>
-    </p>
-   )
-}
-
 export default function Home() {
   let authorName = 'Siddhartha Danthuluri'
 
